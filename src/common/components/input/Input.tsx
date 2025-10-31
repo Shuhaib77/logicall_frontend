@@ -1,4 +1,4 @@
-import React from "react";
+
 import type { ChangeEvent, FocusEvent } from "react";
 
 interface InputProps {

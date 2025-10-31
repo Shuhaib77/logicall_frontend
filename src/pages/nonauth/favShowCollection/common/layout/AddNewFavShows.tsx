@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect } from "react";
 import Button from "../../../../../common/components/button/Button";
-import Modal from "../../../../../common/components/Modal/Modal";
+
 import Input from "../../../../../common/components/input/Input";
-import useForm from "../../../../../hooks/common/useForm";
+import useForm from "../../../../../hooks/common/form/useForm";
 import type { FavShowFormValues } from "../../../../../common/interface/movies/movieInterfaces";
 import {
   useAddFavShows,
@@ -17,8 +17,8 @@ import { formatForDateTimeLocal } from "../../../../../utils/dateTime/formatForD
 const AddNewFavShows = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { mutate: addFavShow, isPending: isAddFavShow } = useAddFavShows();
-  const { mutate: editFavShow, isPending: isEditFavShow } = useEditFavShows();
+  const { mutate: addFavShow, } = useAddFavShows();
+  const { mutate: editFavShow,} = useEditFavShows();
   const { data: showType, isLoading: isShowType } = useGetShowType();
   const { data: favShowById, isLoading: isFavShowById } = useGetfavShowsById({
     user_id: 1,
@@ -97,7 +97,9 @@ const AddNewFavShows = () => {
     }
   }, [favShowById, id]);
   console.log(favShowById);
-
+if(isFavShowById || isShowType){
+    <h1>Loading...</h1>
+}
   return (
     <div className="w-full ">
       <div className="flex justify-between items-center border-b px-5 border-gray-300 dark:border-gray-600 ">

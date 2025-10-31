@@ -1,7 +1,7 @@
 import api from "../../common/api";
 
 export const addFavShows = async (payload: any) => {
-  const { user_id, type_id } = payload;
+  const {  type_id } = payload;
 
   console.log(payload, "payload");
 
@@ -13,7 +13,7 @@ export const addFavShows = async (payload: any) => {
 };
 
 export const getFvaShow = async (payload: any) => {
-  const { user_id = 1, page = 1, limit = 10, search_in, type_id } = payload;
+  const { user_id = 1, page = 1, limit = 10, search_in, } = payload;
   const res = await api.get(`movies/${user_id}/${page}/${limit}`, {
     params: { search_in },
   });
@@ -24,7 +24,7 @@ export const getFvaShow = async (payload: any) => {
 };
 
 export const getFvaShowById = async (payload: any) => {
-  const { user_id = 1, show_id } = payload;
+  const {  show_id } = payload;
   const res = await api.get(`movies/${1}/${show_id}`);
   console.log(res);
   return res?.data?.data;

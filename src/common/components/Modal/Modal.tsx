@@ -1,9 +1,8 @@
-import React from "react";
-import Button from "../button/Button";
-import { Outlet, useNavigate } from "react-router-dom";
+
+import { Outlet } from "react-router-dom";
 
 const Modal = () => {
-  const navigate = useNavigate();
+ 
 
   return (
     <div className="fixed inset-0 bg-black/75 bg-opacity-50 flex  items-center justify-center z-50">

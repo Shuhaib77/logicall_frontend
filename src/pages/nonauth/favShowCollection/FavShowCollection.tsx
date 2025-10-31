@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Input from "../../../common/components/input/Input";
 import Table from "../../../common/components/tables/Table";
 import Button from "../../../common/components/button/Button";
-import AddNewFavShows from "./common/layout/AddNewFavShows";
+
 import type { searchInterface } from "../../../common/interface/search/search";
-import useForm from "../../../hooks/common/useForm";
+import useForm from "../../../hooks/common/form/useForm";
 import {
   useDeleteFavShows,
   useGetfavShows,
@@ -17,7 +17,7 @@ import {
 import { Outlet, useNavigate } from "react-router-dom";
 
 function FavShowCollection() {
-  const [isOpen, setIsOpen] = useState(false);
+
   const [search, setSearch] = useState("");
   const [id, setid] = useState(null);
   const navigate = useNavigate();
@@ -82,7 +82,9 @@ function FavShowCollection() {
   useEffect(() => {
     debouncedSearch(formik.values.search_in);
   }, [formik.values.search_in, debouncedSearch]);
-
+if(isAllFavShows || isShowType || isAllFavShowsById){
+    <h1>Loading...</h1>
+}
   return (
     <>
       <div className="sm:p-5    flex flex-col h-full  ">
@@ -112,7 +114,7 @@ function FavShowCollection() {
                 key={item + 1}
                 onClick={() => handleClick(item?.id)}
                 className=" text-white border-text-tetra  px-4 py-3 "
-                name={item?.name}
+                name={ isDeleteFavShow?"deleting..":item?.name}
               />
             ))}
           </div>

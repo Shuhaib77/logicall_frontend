@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import SideBar from "../../../common/layout/sideBar/SideBar";
 import Header from "../../../common/layout/header/Header";
 import { Outlet } from "react-router-dom";
-import { useGetShowType } from "../../../hooks/nonauth/movies/useMoviesType";
+
 
 function HomeLayout() {
   const [open, setOpen] = useState(false);
