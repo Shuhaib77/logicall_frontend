@@ -1,0 +1,164 @@
+
+@import "tailwindcss";
+
+@theme {
+  /* ==========================================================================
+     BRAND COLORS
+     ========================================================================== */
+  /* Primary brand colors */
+  --color-primary: #09121B;
+  --color-secondary: #0B1320;
+  --color-tertiary: #113044;
+  --color-tetra: #152232;
+
+  /* Custom brand variations */
+  --color-brand-light: #60a5fa;
+  --color-brand: #3b82f6;
+  --color-brand-dark: #1d4ed8;
+  /* ==========================================================================
+     TEXT COLORS
+     ========================================================================== */
+  --color-text-primary: #8294A5;
+  --color-text-secondary: #C1C9D4;
+  --color-text-tertiary: #82959F;
+  --color-text-hover: #aef1cf;
+
+  --color-text-inverse: #2b3674;
+  --color-text-muted: #A3AED0;
+  --color-text-tetra: #111827;
+  --color-text-gray: #6b7280;
+
+  /* ==========================================================================
+     BUTTON COLORS
+     ========================================================================== */
+
+  --color-button-primary: #FF6B6B;
+  --color-button-primary-hover: #1e6b8f;
+  --color-button-secondary: #006ffd;
+  --color-button-secondary-hover: #0056cc;
+  --color-button-tertiary: #5baaff;
+  --color-button-tertiary-hover: #3b90e0;
+  /* ==========================================================================
+     BACKGROUND COLORS
+     ========================================================================== */
+
+  --color-background-primary: #0F1724;
+  --color-background-secondary: #f1f4f9;
+  --color-background-tertiary: #c5c6cc;
+  --color-background-accent: #f9f9f9;
+
+
+
+  /* ==========================================================================
+     SEMANTIC COLORS
+     ========================================================================== */
+
+  /* Success colors */
+  --color-success: #16a34a;
+  --color-success-light: #dcfce7;
+  --color-success-dark: #166534;
+
+  /* Warning colors */
+  --color-warning: #ca8a04;
+  --color-warning-light: #fef9c3;
+  --color-warning-dark: #92400e;
+
+  /* Error colors */
+  --color-error: #ee5d50;
+  --color-error-light: #fee2e2;
+  --color-error-dark: #991b1b;
+
+  
+  /* ==========================================================================
+     BACKGROUND COLORS ICONS
+     ========================================================================== */
+
+  --color-background-icons-primary: #A855f7;
+  --color-background-icons-secondary: #ca8a04 ;
+  --color-background-icons-tertiary:#22c55e ;
+
+  /* ==========================================================================
+     NEUTRAL/GRAY COLORS
+     ========================================================================== */
+
+  --color-neutral-primary: #F1F4F9;
+  --color-neutral-secondary: #e3e4ea;
+  --color-neutral-light: #f8fafc;
+  --color-neutral-dark: #374151;
+
+  
+
+
+
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+
+  /* Font families */
+  --font-family-sans: "Poppins",
+    sans-serif;
+  --font-family-mono: "JetBrains Mono", "Nunito Sans", Consolas, monospace;
+  --font-family-display: "Poppins", Inter, "DM Sans", system-ui, sans-serif;
+
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem; /* 36px */
+
+  /* Line heights */
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* ==========================================================================
+     SPACING & LAYOUT
+     ========================================================================== */
+
+  /* Border radius */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius-md: 0.375rem; /* 6px */
+  --border-radius-lg: 0.5rem; /* 8px */
+  --border-radius-xl: 0.75rem; /* 12px */
+  --border-radius-full: 9999px;
+  /* Border color */
+  --color-border-primary: #d9d9d9; /* 4px */
+  --color-border-secondory: #d9d9d9; /* 4px */
+  --color-border-tertiary: #e5e7eb; /* 4px */
+
+  /* Shadows */
+  --shadow-sm: 6px 6px 54px 0 rgba(0,0,0,0.05),
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* ==========================================================================
+     Z-INDEX SCALE
+     ========================================================================== */
+
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal: 1040;
+  --z-index-popover: 1050;
+  --z-index-tooltip: 1060;
+  --z-index-toast: 1070;
+}
